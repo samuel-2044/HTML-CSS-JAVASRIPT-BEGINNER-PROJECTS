@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day 2026</title>
+    <link rel="stylesheet" href="/valday.css">
+</head>
+<body>
+    <div class="countdown-badge">
+        💕 Valentine's
+        <span class="time" id="countdown">00d 00h 00m</span>
+    </div>
+
+    <div class="hearts-container" id="hearts"></div>
+
+    <div class="poster-container">
+        <div class="decorative-border"></div>
+        <div class="corner-decoration corner-tl">💕</div>
+        <div class="corner-decoration corner-tr">💖</div>
+        <div class="corner-decoration corner-bl">💗</div>
+        <div class="corner-decoration corner-br">💓</div>
+
+        <div class="poster-content">
+            <div class="header">
+                <h1>Happy Valentine's Day</h1>
+                <p class="subtitle">February 14, 2026</p>
+            </div>
+
+            <div class="main-image">
+                <div class="image-frame"></div>
+                <img src="images/vday.png" alt="Valentine's Day Love">
+            </div>
+
+            <div class="message-section">
+                <p>"Sending you all my love on this special day and every day. You are my everything!"</p>
+                <p class="signature">Forever Yours 💕</p>
+            </div>
+
+            <div class="footer">
+                <p>With love from my heart to yours</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="gift-btn" onclick="openGift()">🎁</button>
+
+    <div class="modal" id="giftModal" onclick="closeGift(event)">
+        <div class="modal-content">
+            <h2>💕 My Love 💕</h2>
+            <p>You are the love of my life, my best friend, my soulmate. Every moment with you is a treasure!</p>
+            <button class="modal-close" onclick="closeGift(event)">Close</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

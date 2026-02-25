@@ -1,0 +1,112 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #e0e0e0, #a0d8a0); /* Light gray to light green gradient */
+    color: white;
+}
+
+/* Game Container */
+.container {
+    text-align: center;
+    background: #2e7d32; /* Deep green */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #ffffff; /* White text */
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Game Board Grid */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Individual Cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #c8e6c9; /* Light green */
+    border: 2px solid #ffffff; /* White border */
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    color: #1b5e20; /* Dark green text */
+}
+
+/* Cell hover effect */
+.cell:hover {
+    background-color: #a5d6a7;
+    transform: scale(1.1);
+}
+
+/* Winning Cells */
+.cell.winning {
+    background-color: #2e7d32; /* Green for winning cells */
+    color: white;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px white;
+    }
+    to {
+        box-shadow: 0 0 20px white;
+    }
+}
+
+/* Status and Reset Button */
+#status {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Buttons */
+#aiButton, #resetButton {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #2e7d32; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+#aiButton:hover, #resetButton:hover {
+    background-color: #1b5e20; /* Darker green on hover */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #1976d2;
+}

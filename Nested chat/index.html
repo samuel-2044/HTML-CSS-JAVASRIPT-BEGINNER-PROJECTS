@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>SAMS Fees — Makos Tech</title>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner" style="justify-content:center; gap:12px;">
+      <a href="#top" class="brand" aria-label="Home">MT</a>
+      <div style="text-align:center">
+        <h1 class="title" style="margin:0">Student Fees</h1>
+        <p class="subtitle" style="margin:2px 0 0">Makos Tech — BSc. Computer Science</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="fees" aria-labelledby="fees-title">
+      <div class="container">
+        <h2 id="fees-title">Fees</h2>
+        <div class="card">
+          <div class="fees">
+            <div class="fees__summary">
+              <div>
+                <div class="author">Current Term</div>
+                <div id="termSummary" class="meta">Tuition: $2,500 · Lab: $200 · Library: $50</div>
+              </div>
+              <div id="statusPill" class="status status--ok">Balance Due</div>
+            </div>
+            <div class="fees__breakdown">
+              <div class="row"><span>Total Payable</span><strong id="totalPayable">$2,750.00</strong></div>
+              <div class="row"><span>Amount Paid</span><strong id="amountPaid">$0.00</strong></div>
+              <div class="row"><span>Balance</span><strong id="balance" class="warn">$2,750.00</strong></div>
+              <div class="row"><span>Due Date</span><strong id="dueDate">2026‑03‑15</strong></div>
+            </div>
+
+            <div class="editor">
+              <label class="sr-only" for="amount">Amount</label>
+              <input id="amount" type="number" min="1" step="1" placeholder="Enter amount (USD)" />
+              <div class="editor__actions">
+                <button class="btn btn--primary" id="depositBtn" type="button">Deposit</button>
+                <button class="btn btn--ghost" id="refundBtn" type="button">Refund</button>
+              </div>
+              <div class="editor__actions">
+                <button class="btn btn--primary" id="previewBtn" type="button">Preview Invoice</button>
+                <button class="btn btn--ghost" id="receiptBtn" type="button">Download Receipt</button>
+              </div>
+              <p id="feeStatus" class="meta" role="status" aria-live="polite"></p>
+            </div>
+
+            <div class="uploads">
+              <h3 class="subtitle" style="margin:0 0 8px">Upload Payment Receipts</h3>
+              <input id="uploadInput" type="file" multiple aria-label="Upload payment receipts" />
+              <ul id="uploadList" class="upload__list" aria-label="Uploaded receipts list"></ul>
+            </div>
+
+            <div class="transactions">
+              <h3 class="subtitle" style="margin:12px 0 8px">Transactions</h3>
+              <ul id="txnList" class="txn__list" aria-label="Transaction history"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="invoiceModal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-action="close-modal"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="invTitle">
+      <div class="modal__header">
+        <h3 id="invTitle" class="title" style="margin:0;font-size:20px">Invoice Preview</h3>
+        <button class="btn btn--ghost" id="closeModalBtn" type="button">Close</button>
+      </div>
+      <div id="invoiceContent" class="invoice"></div>
+      <div class="modal__footer">
+        <button class="btn btn--primary" id="downloadInvoiceBtn" type="button">Download Invoice</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="meta">© <span id="year"></span> Makos Tech — Hypothetical University.</p>
+      <a href="#top" class="action-link">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

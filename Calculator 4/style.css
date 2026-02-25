@@ -1,0 +1,110 @@
+body {
+	background-color: lightblue;
+	font-family: Tahoma;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+#container {
+	width: 400px;
+	padding: 16px 16px 40px 16px;
+	margin: 40px auto;
+	background-color: #ABABAB;
+	border-radius: 8px;
+	border-top: 4px solid #FFF;
+	border-right: 4px solid #FFF;
+	border-bottom: 4px solid #C1C1C1;
+	border-left: 4px solid #C1C1C1;
+	box-shadow: -6px 6px 14px rgba(0, 0, 0, .6), inset -200px 0px 200px rgba(255, 255, 255, .5);
+	outline: 4px solid #000;
+}
+
+#display {
+	display: block;
+	margin: 30px auto;
+	height: 84px;
+	width: 348px;
+	padding: 0 20px;
+	border-radius: 8px;
+	border-top: 4px solid #C1C1C1;
+	border-right: 4px solid #C1C1C1;
+	border-bottom: 4px solid #FFF;
+	border-left: 4px solid #FFF;
+	background-color: lightyellow;
+	box-shadow: inset 0px 0px 20px #030303, inset 0px -40px 2px rgba(150, 150, 150, .2);
+	font-size: 56px;
+	color: #000;
+	text-align: right;
+	font-weight: 400;
+	outline: 4px solid #000;
+}
+
+.button {
+	display: inline-block;
+	margin: 4px;
+	width: 84px;
+	height: 84px;
+	font-size: 32px;
+	font-weight: bold;
+	border-radius: 8px;
+}
+
+.mathButtons {
+	margin: 4px 4px 12px 4px;
+	color: #FFF;
+	text-shadow: -2px -2px 0px #44006F;
+	background-color: #434343;
+	border-top: 4px solid #C1C1C1;
+	border-right: 4px solid #C1C1C1;
+	border-bottom: 4px solid #181818;
+	border-left: 4px solid #181818;
+	box-shadow: 0px 0px 4px #030303, inset 0px -40px 2px #2E2E2E;
+}
+
+.digits {
+	color: #181818;
+	text-shadow: 2px 2px 0px #FFF;
+	background-color: #EBEBEB;
+	border-top: 4px solid #FFF;
+	border-right: 4px solid #FFF;
+	border-bottom: 4px solid #C1C1C1;
+	border-left: 4px solid #C1C1C1;
+	border-radius: 8px;
+	box-shadow: 0px 0px 4px #030303, inset 0px -40px 2px #DCDCDC;
+}
+
+.digits:hover,
+.mathButtons:hover,
+#clearButton:hover {
+	background-color: #FFBA75;
+	box-shadow: 0px 0px 4px #FFBA75, inset 0px -40px 2px #FF8000;
+	border-top: 4px solid #FFF;
+	border-right: 4px solid #FFF;
+	border-bottom: 4px solid #AE5700;
+	border-left: 4px solid #AE5700;
+}
+
+#clearButton {
+	color: #FFF;
+	text-shadow: -2px -2px 0px #44006F;
+	background-color: #D20000;
+	border-top: 4px solid #FF8484;
+	border-right: 4px solid #FF8484;
+	border-bottom: 4px solid #800000;
+	border-left: 4px solid #800000;
+	box-shadow: 0px 0px 4px #030303, inset 0px -40px 2px #B00000;
+}
+
+#brand {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #181818;
+	margin: 20px 0;
+}

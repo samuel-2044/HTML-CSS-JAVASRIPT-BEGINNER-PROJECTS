@@ -1,0 +1,89 @@
+body {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 50%, #ff0080 100%);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form {
+    z-index: 1;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    background: #00008b;
+    border: 2px solid #ffff00;
+    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.2);
+    width: 20em;
+    color: white;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 0 auto 20px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+    height: 40px;
+    width: 80%;
+    color: white;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.button {
+    background-color: #8e2de2;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff0080;
+}
+
+.circle {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.circleLeft {
+    top: -55px;
+    left: -50px;
+    background-color: #ffff00;
+}
+
+.circleRight {
+    margin-top: -50px;
+    left: 290px;
+    background-color: #ff0000;
+}

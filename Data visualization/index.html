@@ -1,0 +1,60 @@
+<!-- Environmental Data Visualization Dashboard -->
+<!-- Created by Makos Tech - Tech for the Environment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Data Dashboard - Created by Makos Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>MakosTech EcoSense</h1>
+        </header>
+        <div class="charts-container">
+            <div class="chart-item">
+                <canvas id="barChart"></canvas>
+                <button class="info-btn" data-chart="bar">More Info →</button>
+                <div class="info-content" id="bar-info">
+                    <h3>Monthly Renewable Energy Production</h3>
+                    <p>This bar chart illustrates the growth in renewable energy production over the past six months. Renewable energy sources such as solar, wind, and hydro power are becoming increasingly vital in the fight against climate change. By transitioning to clean energy, we can reduce greenhouse gas emissions and create a sustainable future for generations to come.</p>
+                    <p>The data shows a steady increase, highlighting the effectiveness of investments in green technology. As more countries adopt renewable energy policies, we can expect to see even greater progress in reducing our reliance on fossil fuels and mitigating the impacts of global warming.</p>
+                </div>
+            </div>
+            <div class="chart-item">
+                <canvas id="lineChart"></canvas>
+                <button class="info-btn" data-chart="line">More Info →</button>
+                <div class="info-content" id="line-info">
+                    <h3>Monthly Recycling Rates</h3>
+                    <p>This line chart tracks the improvement in recycling rates throughout the year. Recycling plays a crucial role in environmental protection by reducing waste sent to landfills and conserving natural resources. Higher recycling rates indicate growing public awareness and participation in sustainable practices.</p>
+                    <p>The upward trend demonstrates the success of educational campaigns and improved recycling infrastructure. By continuing to promote recycling initiatives, communities can significantly decrease their environmental footprint and contribute to a circular economy that values resource efficiency.</p>
+                </div>
+            </div>
+            <div class="chart-item">
+                <canvas id="pieChart"></canvas>
+                <button class="info-btn" data-chart="pie">More Info →</button>
+                <div class="info-content" id="pie-info">
+                    <h3>Renewable Energy Sources Distribution</h3>
+                    <p>This pie chart shows the distribution of different renewable energy sources in our energy mix. Solar, wind, hydro, and biomass each play important roles in providing clean, sustainable power. The chart highlights the diversity of renewable options available to meet our energy needs.</p>
+                    <p>As technology advances and costs decrease, we can expect to see shifts in this distribution. Investing in a mix of renewable sources ensures energy security and resilience against climate-related disruptions, paving the way for a carbon-neutral future.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Tech for the Environment - Created by <a href="https://www.tiktok.com/@makostech" target="_blank">Makos Tech</a><br>
+            Find Source Code <a href="https://www.tiktok.com/@makostech" target="_blank">@makostech</a> Tiktok
+        </footer>
+    </div>
+    <!-- Modal -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

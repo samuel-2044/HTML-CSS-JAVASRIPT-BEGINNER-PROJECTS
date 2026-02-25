@@ -1,0 +1,84 @@
+/* To Do List Styles - Makos Tech */
+/* Yellow & Black Theme */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.form {
+    position: absolute;
+    top: 30%;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+    width: 400px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    background-color: #FFD700;
+    color: #000;
+}
+
+.input::placeholder {
+    color: #666;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    list-style-type: none;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-top: 2px dotted #FFD700;
+    position: relative;
+    color: #FFD700;
+    background-color: #1a1a1a;
+}
+
+.list li .fa-trash,
+.list li .fa-check-square {
+    color: #FFD700;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.list li .fa-trash {
+    right: 20px;
+}
+
+.list li .fa-check-square {
+    right: 40px;
+}
+
+.list li .fa-trash:hover,
+.list li .fa-check-square:hover {
+    color: #FFA500;
+}
+
+.list li.checked {
+    color: #666;
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square {
+    color: #666;
+}

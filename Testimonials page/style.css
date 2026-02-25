@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+  text-align: center;
+  color: #28a745;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 2px white;
+  text-shadow: none;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #28a745;
+}
+::selection{
+  background: rgba(40,167,69,0.3);
+}
+.wrapper{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .box{
+  background: #fff;
+  width: calc(33% - 10px);
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #007bff;
+  box-shadow: 0 8px 16px rgba(0,64,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.wrapper .box:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,64,0,0.3);
+}
+.wrapper .box i.quote{
+  font-size: 30px;
+  color: #28a745;
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
+.wrapper .box .content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.box .info .name{
+  font-weight: 600;
+  font-size: 17px;
+}
+.box .info .job{
+  font-size: 16px;
+  font-weight: 500;
+  color: #28a745;
+}
+.box .info .stars{
+  margin-top: 2px;
+}
+.box .info .stars i{
+  color: #28a745;
+}
+.box .content .image{
+  height: 80px;
+  width: 80px;
+  padding: 4px;
+  background: #28a745;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.box:hover .content .image{
+  transform: scale(1.1);
+}
+.content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.box:hover .content .image img{
+  border-color: #fff;
+}
+@media (max-width: 1045px) {
+  .wrapper .box{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .wrapper .box{
+    width: 100%;
+  }
+}

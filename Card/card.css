@@ -1,0 +1,214 @@
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-weight: 400;
+    background:url("/images/old-trafford.webp") no-repeat center center / cover;
+}
+
+body::after{
+    content:'By Makos Tech';
+    font-size:1rem;
+    color:#aaa;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:2;
+}
+
+/* Wrapper */
+.wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+    min-height: 500px;
+}
+
+/* Card */
+.fifa-player-card{
+    position: relative;
+    width:300px;
+    height:485px;
+    background-image: url(/images/card_bg.png);
+    background-position: center center;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    padding:3.8rem 0;
+    z-index: 2;
+    transition: 200ms ease-in;
+}
+
+/* Top section */
+.fifa-player-card .player-card-top{
+    position: relative;
+    display: flex;
+    color:#e9cc74;
+    padding: 0 1.5rem;
+}
+
+.fifa-player-card .player-card-top .player-master-info{
+    position: absolute;
+    line-height: 2.2rem;
+    font-weight: 300;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+}
+
+.fifa-player-card .player-card-top .player-master-info .player-rating{
+    font-size:2rem;
+}
+
+.fifa-player-card .player-card-top .player-master-info .player-position{
+    font-size: 1.4rem;
+}
+
+.fifa-player-card .player-card-top .player-master-info .player-nation{
+    display: block;
+    width:2rem;
+    height:25px;
+    margin: 0.3rem 0;
+}
+
+.fifa-player-card .player-card-top .player-master-info .player-nation img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fifa-player-card .player-card-top .player-master-info .player-club{
+    display: block;
+    width:2.1rem;
+    height:40px;
+}
+
+.fifa-player-card .player-card-top .player-master-info .player-club img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fifa-player-card .player-card-top .player-picture{
+    width:200px;
+    height:200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.fifa-player-card .player-card-top .player-picture img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    position: relative;
+    right: -1.5rem;
+}
+
+.fifa-player-card .player-card-top .player-picture .player-extra{
+    position: absolute;
+    right:0;
+    bottom: -0.5rem;
+    overflow: hidden;
+    font-size:1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width:100%;
+    height:2rem;
+    padding:0 1.5rem;
+    text-align: right;
+}
+
+.fifa-player-card .player-card-top .player-picture .player-extra span{
+    margin-left: 0.6rem;
+    text-shadow:2px 2px #333;
+}
+
+/* Bottom section */
+.fifa-player-card .player-card-bottom{
+    position: relative;
+}
+
+/* Info */
+.fifa-player-card .player-card-bottom .player-info{
+    display: block;
+    padding:0.3rem 0;
+    color:#e9cc74;
+    width:90%;
+    margin:0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.fifa-player-card .player-card-bottom .player-info .player-name{
+    width:100%;
+    display: block;
+    text-align: center;
+    font-size:1.6rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(233,204,116, 0.1);
+    padding-bottom: 0.3rem;
+    overflow: hidden;
+}
+
+.fifa-player-card .player-card-bottom .player-info .player-name span{
+    display: block;
+    text-shadow:2px 2px #111;
+}
+
+/* Skills */
+.fifa-player-card .player-card-bottom .player-info .player-skills{
+    margin: 0.3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.fifa-player-card .player-card-bottom .player-info .player-skills .skill{
+    background: rgba(233,204,116, 0.1);
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e9cc74;
+}
+
+/* Attributes */
+.fifa-player-card .player-card-bottom .player-info .player-attributes{
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.fifa-player-card .player-card-bottom .player-info .player-attributes .player-attributes-col{
+    border-right: 2px solid rgba(233,204,116, 0.1);
+    padding: 0 2.3rem;
+}
+
+.fifa-player-card .player-card-bottom .player-info .player-attributes .player-attributes-col span{
+    display: flex;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.fifa-player-card .player-card-bottom .player-info .player-attributes .player-attributes-col span .value{
+    margin-right: 0.3rem;
+    font-weight: 700;
+}
+
+.fifa-player-card .player-card-bottom .player-info .player-attributes .player-attributes-col span .attribute{
+    font-weight: 300;
+}
+
+.fifa-player-card .player-card-bottom .player-info .player-attributes .player-attributes-col:last-child{
+    border:0;
+}

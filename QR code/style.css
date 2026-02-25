@@ -1,0 +1,104 @@
+/* style.css file*/
+body {
+    /* Centering and background styling */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgb(0 0 128 / 66%);
+}
+.container {
+    /* Container for centering content */
+    width: 100%;
+    max-width: 500px;
+    margin: 5px;
+}
+
+.container h1 {
+    color: #ffffff;
+}
+
+.section {
+    /* Section for QR reader with white background and shadow */
+    background-color: #ffffff;
+    padding: 50px 30px;
+    border: 1.5px solid #b2b2b2;
+    border-radius: 0.25em;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+
+#my-qr-reader {
+    /* QR reader container styling */
+    padding: 20px !important;
+    border: 1.5px solid #b2b2b2 !important;
+    border-radius: 8px;
+}
+
+#my-qr-reader img[alt="Info icon"] {
+    display: none;
+}
+
+#my-qr-reader img[alt="Camera based scan"] {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+button {
+    /* Button styling with blue theme */
+    padding: 10px 20px;
+    border: 1px solid #b2b2b2;
+    outline: none;
+    border-radius: 0.25em;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #0000ffad;
+    transition: 0.3s background-color;
+}
+
+button:hover {
+    background-color: #0000ff;
+}
+
+#html5-qrcode-anchor-scan-type-change {
+    text-decoration: none !important;
+    color: #1d9bf0;
+}
+
+video {
+    width: 100% !important;
+    border: 3px solid #b2b2b2 !important;
+    border-radius: 0.25em;
+}
+
+#result {
+    /* Styling for the result display */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 3px solid #100f0f;
+    border-radius: 4px;
+}
+
+#copy-btn {
+    /* Styling for the copy button */
+    margin-top: 10px;
+    padding: 3px 8px;
+    font-size: 10px;
+    background-color: #0000ffad;
+    border: 1px solid #b2b2b2;
+    border-radius: 0.25em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s background-color;
+}
+
+#copy-btn:hover {
+    background-color: #0000ff;
+    transform: scale(1.05);
+}
