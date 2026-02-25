@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Header: timer and streak -->
+        <div class="quiz-header">
+            <div class="timer">Time Left: <span id="time">15</span>s</div>
+            <div class="streak">🔥 Streak: <span id="streak-count">0</span></div>
+        </div>
+        <!-- Progress indicator -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <!-- Question display -->
+        <div class="question-number" id="question-number"></div>
+        <div class="question">Question will appear here</div>
+        <!-- Answer options -->
+        <div class="options"></div>
+        <!-- Feedback and explanation -->
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+        <div class="explanation" id="explanation"></div>
+        <!-- Results section -->
+        <div class="result">
+            <div class="score-title">Results</div>
+            <div class="score-grid" aria-live="polite">
+                <div class="score-card">
+                    <div class="score-label">Correct</div>
+                    <div class="score-value"><span id="score">0</span><span class="score-unit"> / <span id="total">0</span></span></div>
+                </div>
+                <div class="score-card">
+                    <div class="score-label">Percentage</div>
+                    <div class="score-value"><span id="percent">0</span><span class="score-unit">%</span></div>
+                </div>
+            </div>
+            <div class="score-summary" id="summary"></div>
+            <div class="review" id="review"></div>
+        </div>
+        <button class="restart-btn">Restart Quiz</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,251 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* App Container */
+.app-container {
+    background-color: rgba(0, 100, 180, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Header Styling */
+.app-header h1 {
+    font-size: 2.5rem;
+    color: #FFD700;
+}
+
+.app-header p {
+    font-size: 1rem;
+    color: #E0F7FA;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid #87CEEB;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9);
+    color: #004d7a;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #5c9cba;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #FFD700;
+    color: #004d7a;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #FFC107;
+}
+
+/* Error Message */
+.error-message {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: none;
+    font-size: 1rem;
+}
+
+/* Loading Indicator */
+.loading {
+    display: none;
+    font-size: 1.2rem;
+    color: #FFD700;
+    padding: 30px;
+    text-align: center;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #FFD700;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Weather Container */
+.weather-container {
+    display: none;
+}
+
+/* Current Weather */
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(135, 206, 235, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.current-weather .icon img {
+    width: 80px;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    width: 100%;
+}
+
+.info p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.info #temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.info #description {
+    font-size: 1.2rem;
+    color: #FFD700;
+    text-transform: capitalize;
+}
+
+/* Forecast Section */
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.day {
+    background: rgba(135, 206, 235, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.weekday {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.day .icon img {
+    width: 50px;
+}
+
+.temp {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Dynamic Background */
+body.clear {
+    background-image: url('https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?cs=srgb&dl=pexels-philippe-donn-1366919.jpg&fm=jpg');
+}
+
+body.clouds {
+    background-image: url('https://images.pexels.com/photos/2090746/pexels-photo-2090746.jpeg?cs=srgb&dl=pexels-johannes-plenio-2090746.jpg&fm=jpg');
+}
+
+body.rain {
+    background-image: url('https://images.pexels.com/photos/1529360/pexels-photo-1529360.jpeg?cs=srgb&dl=pexels-breno-espirito-santo-1529360.jpg&fm=jpg');
+}
+
+body.snow {
+    background-image: url('https://images.pexels.com/photos/259637/pexels-photo-259637.jpeg?cs=srgb&dl=pexels-pixabay-259637.jpg&fm=jpg');
+}
+
+body.default {
+    background-image: url('https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?cs=srgb&dl=pexels-philippe-donn-1366919.jpg&fm=jpg');
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?cs=srgb&dl=pexels-philippe-donn-1366919.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .forecast {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .app-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .info #temperature {
+        font-size: 2rem;
+    }
+}
+
+/* Watermark */
+.watermark {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
