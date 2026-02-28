@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1001,
+        "imageUrl": "https://i.pravatar.cc/150?img=60",
+        "firstName": "John",
+        "lastName": "Ochieng",
+        "email": "john.ochieng@gmail.com",
+        "contactNumber": "712345678",
+        "age": 35,
+        "dob": "15/06/1989",
+        "salary": 85000,
+        "address": "Kenyatta Avenue, Nairobi"
+    },
+    {
+        "id": 1002,
+        "imageUrl": "https://i.pravatar.cc/150?img=61",
+        "firstName": "Grace",
+        "lastName": "Wanjiku",
+        "email": "grace.wanjiku@gmail.com",
+        "contactNumber": "723456789",
+        "age": 28,
+        "dob": "22/03/1996",
+        "salary": 72000,
+        "address": "Moi Road, Nakuru"
+    },
+    {
+        "id": 1003,
+        "imageUrl": "https://i.pravatar.cc/150?img=62",
+        "firstName": "David",
+        "lastName": "Kamau",
+        "email": "david.kamau@gmail.com",
+        "contactNumber": "734567890",
+        "age": 42,
+        "dob": "08/11/1982",
+        "salary": 120000,
+        "address": "Kenyatta Street, Mombasa"
+    },
+    {
+        "id": 1004,
+        "imageUrl": "https://i.pravatar.cc/150?img=63",
+        "firstName": "Mary",
+        "lastName": "Njoroge",
+        "email": "mary.njoroge@gmail.com",
+        "contactNumber": "745678901",
+        "age": 31,
+        "dob": "14/07/1993",
+        "salary": 65000,
+        "address": "Ngong Road, Nairobi"
+    },
+    {
+        "id": 1005,
+        "imageUrl": "https://i.pravatar.cc/150?img=64",
+        "firstName": "Peter",
+        "lastName": "Omondi",
+        "email": "peter.omondi@gmail.com",
+        "contactNumber": "756789012",
+        "age": 38,
+        "dob": "30/01/1986",
+        "salary": 95000,
+        "address": "Kisumu Road, Kisumu"
+    },
+    {
+        "id": 1006,
+        "imageUrl": "https://i.pravatar.cc/150?img=65",
+        "firstName": "Faith",
+        "lastName": "Akinyi",
+        "email": "faith.akinyi@gmail.com",
+        "contactNumber": "767890123",
+        "age": 26,
+        "dob": "05/09/1998",
+        "salary": 58000,
+        "address": "Eldoret Street, Eldoret"
+    },
+    {
+        "id": 1007,
+        "imageUrl": "https://i.pravatar.cc/150?img=66",
+        "firstName": "James",
+        "lastName": "Mutua",
+        "email": "james.mutua@gmail.com",
+        "contactNumber": "778901234",
+        "age": 45,
+        "dob": "19/04/1979",
+        "salary": 150000,
+        "address": "Kilimani Road, Nairobi"
+    },
+    {
+        "id": 1008,
+        "imageUrl": "https://i.pravatar.cc/150?img=67",
+        "firstName": "Sarah",
+        "lastName": "Muthoni",
+        "email": "sarah.muthoni@gmail.com",
+        "contactNumber": "789012345",
+        "age": 29,
+        "dob": "12/12/1995",
+        "salary": 78000,
+        "address": "Thika Road, Nairobi"
+    },
+    {
+        "id": 1009,
+        "imageUrl": "https://i.pravatar.cc/150?img=68",
+        "firstName": "Michael",
+        "lastName": "Ndegwa",
+        "email": "michael.ndegwa@gmail.com",
+        "contactNumber": "790123456",
+        "age": 33,
+        "dob": "25/08/1991",
+        "salary": 88000,
+        "address": "Mombasa Road, Nairobi"
+    },
+    {
+        "id": 1010,
+        "imageUrl": "https://i.pravatar.cc/150?img=69",
+        "firstName": "Elizabeth",
+        "lastName": "Wambui",
+        "email": "elizabeth.wambui@gmail.com",
+        "contactNumber": "701234567",
+        "age": 37,
+        "dob": "03/05/1987",
+        "salary": 92000,
+        "address": "Karen Road, Nairobi"
+    }
+]
