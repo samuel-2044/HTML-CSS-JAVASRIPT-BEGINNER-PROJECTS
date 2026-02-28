@@ -8,4 +8,4 @@ Built using:
 - CSS
 - JavaScript
 
-Author: Samuel
+Author: Makos
